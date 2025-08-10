@@ -41,7 +41,7 @@ export default function UrlList() {
               >
                 <td className="p-3">
                   <a
-                    href={`https://url-shortener-production-3f34.up.railway.app/${url.shortCode}`}
+                    href={`http://localhost:8000/${url.shortCode}`}
                     onClick={() => {
                       setTimeout(fetchUrls, 1500);
                     }}
@@ -49,7 +49,7 @@ export default function UrlList() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    {`https://url-shortener-production-3f34.up.railway.app/${url.shortCode}`}
+                    {`http://localhost:8000/${url.shortCode}`}
                   </a>
                 </td>
                 <td className="p-3 truncate max-w-xs" title={url.originalUrl}>
@@ -75,7 +75,7 @@ export default function UrlList() {
           >
             <p className="text-sm text-gray-500 mb-1">Short URL</p>
             <a
-              href={`https://url-shortener-production-3f34.up.railway.app/${url.shortCode}`}
+              href={`http://localhost:8000/${url.shortCode}`}
               onClick={() => {
                 setTimeout(fetchUrls, 1500);
               }}
@@ -83,7 +83,7 @@ export default function UrlList() {
               target="_blank"
               rel="noreferrer"
             >
-              {`https://url-shortener-production-3f34.up.railway.app/${url.shortCode}`}
+              {`http://localhost:8000/${url.shortCode}`}
             </a>
 
             <p className="text-sm text-gray-500 mt-3 mb-1">Original URL</p>
