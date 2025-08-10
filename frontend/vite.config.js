@@ -6,7 +6,10 @@ export default defineConfig({
   ],
   server: {
     proxy: {
-      '/api': 'https://url-shortener-production-3f34.up.railway.app',
+      '/api': {
+        target: 'https://url-shortener-production-3f34.up.railway.app',
+        changeOrigin: true
+      }
     }
   }
 })
