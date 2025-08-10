@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home";
-import Admin from "./pages/Admin";
+import Home from "./pages/Home.jsx";
+import Admin from "./pages/Admin.jsx";
 import { Menu, X } from "lucide-react";
 
 function App() {
