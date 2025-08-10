@@ -4,9 +4,6 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
-  optimizeDeps: {
-    include: ['react-router', 'react-router-dom'],
-  },
   server: {
     proxy: {
       '/api': {
