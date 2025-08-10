@@ -6,7 +6,7 @@ export default defineConfig({
   ],
   server: {
     proxy: {
-      '/api': 'http://localhost:8000',
+      '/api': 'https://url-shortener-production-3f34.up.railway.app',
     }
   }
 })
