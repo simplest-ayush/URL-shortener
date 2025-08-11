@@ -14,6 +14,7 @@ app.use(cors(
     // origin: 'https://shrinkrr.netlify.app'
 ))
 app.use(express.json())
+app.use(express.static("public"))
 
 const PORT = process.env.PORT || 8000
 
