@@ -10,9 +10,9 @@ dotenv.config({
     path: '../.env'
 })
 
-app.use(cors(
-    // origin: 'https://shrinkrr.netlify.app'
-))
+app.use(cors({
+    origin: 'https://shrinkrr.netlify.app',
+}))
 app.use(express.json())
 app.use(express.static("public"))
 
