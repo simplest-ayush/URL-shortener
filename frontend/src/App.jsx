@@ -22,7 +22,7 @@ function App() {
               Home
             </Link>
             <Link
-              to="/admin"
+              to="/admin/urls"
               className="hover:text-blue-200 transition-colors duration-200"
             >
               Admin
@@ -45,7 +45,7 @@ function App() {
               Home
             </Link>
             <Link
-              to="/admin"
+              to="/admin/urls"
               className="block px-4 py-2 hover:bg-blue-600"
               onClick={() => setMenuOpen(false)}
             >
@@ -56,7 +56,7 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/admin" element={<Admin />} />
+        <Route path="/admin/urls" element={<Admin />} />
       </Routes>
     </Router>
   );
